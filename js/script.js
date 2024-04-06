@@ -314,3 +314,5 @@ function contactUs(amount) {
     // In a real scenario, this could open a modal, redirect to a contact page with preselected options, or trigger a mailto link.
     alert(`Vous souhaitez nous contacter pour la carte avantage de CHF${amount}.`);
 }
+
+
