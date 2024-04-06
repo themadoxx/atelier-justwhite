@@ -916,7 +916,6 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 .welcome-section {
   text-align: center;
   padding: 20px;
-  background-color: #f9f9f9; /* Couleur de fond légère pour la section */
   border-radius: 8px; /* Bords arrondis pour un look moderne */
   margin: 20px 0; /* Espace autour de la section */
 }
@@ -1427,11 +1426,11 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 }
 
 .section-hero .main-text {
-  text-align: justify;
-  text-justify: inter-word; /* Améliore la justification pour les navigateurs qui le prennent en charge */
+  text-align: center;
   padding: 20px;
   width: 80%; /* Ajustez selon les besoins pour contrôler la "carrure" du texte */
   margin: auto; /* Centre le bloc de texte dans son conteneur */
+margin-bottom: 15px;
 }
 
 
@@ -1497,7 +1496,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   border-radius: 24px;
   overflow: hidden;
   padding: 12px;
-  width: calc(100vw - 96px);
+  width: calc(100vw - 35px);
   margin: 48px auto;
   gap: 36px;
 }
