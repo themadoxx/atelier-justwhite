@@ -1585,3 +1585,23 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
     padding: 0;
   }
 }
+
+
+
+/********************/
+.product-section {
+  padding: 40px 0;
+}
+
+.product-section h2, .product-section h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.product-section p {
+  margin-bottom: 15px;
+}
+
+.maintenance-tips {
+  margin-top: 30px;
+}
