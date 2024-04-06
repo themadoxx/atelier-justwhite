@@ -210,8 +210,8 @@
 	.header-right-link > ul > li:hover .header-link-dropdown {opacity: 1;}
 	.nav > li.level:hover .megamenu {opacity: 1; visibility: visible; top: 100%;}
 	.header-right-link ul li.cart-icon:hover > a span.icon {background-position: -9px -52px;}
-	header#header.sticky .navbar-brand img {max-width: 150px;}
-	.sticky .navbar-nav > li > a {padding-top: 25px; padding-bottom: 25px;}
+	header#header.sticky .navbar-brand img {max-width: 100%;}
+	.sticky .navbar-nav > li > a {padding-top: 0px; padding-bottom: 0px;}
 	.sticky .header-right-link ul li > a {padding: 22px 0;}
 	.header-right-link > ul > li.order-online {transition: all 400ms ease;}
 	.sticky .header-right-link > ul > li.order-online {padding-top: 13px; padding-bottom: 13px;}
@@ -256,6 +256,7 @@
 	.menu-list-res {display: block;}
 	.navbar-header .navbar-brand {max-width: 150px;}
 	header#header.sticky {padding: 15px 0;}
+	.navbar-brand img{max-width: 130%;}
 
 	.megamenu { background-color: transparent; border-top: none; position: relative; left: auto; top: auto; opacity: 1; padding: 0px 30px; transition: none 0s ease 0s; -moz-transition: none 0s ease 0s; -webkit-transition: none 0s ease 0s; -o-transition: none 0s ease 0s;}
 	.megamenu .container {width: 100%;}

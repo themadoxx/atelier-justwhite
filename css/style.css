@@ -45,15 +45,16 @@ _______________________________________________________*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Pacifico&display=swap');
 
 
+
 /* -------------// General Style //------------- */
 *{box-sizing: border-box;}
-body{padding: 0; margin: 0; font-family: 'PT Sans Narrow', sans-serif; font-size: 16px; font-weight: 400; color: #999;}
-h1, h2, h3, h4, h5, h6{padding: 0px; margin: 0;}
+body{margin: 0; font-family: "Julius Sans One", sans-serif; font-size: 16px; font-weight: 400; color: #999;}
+h1, h2, h3, h4, h5, h6{padding: 0px; margin: 0; }
 ul, li{padding: 0; margin: 0; list-style: none;}
 a{padding: 0; margin: 0; text-decoration: none; transition: all 400ms ease; color: #1d1d1d; cursor: pointer;}
 a:hover{text-decoration: none; color: #C10320;}
-p{padding: 0; margin: 0;}
-button{outline: none; transition: all 400ms ease;}
+p{padding: 0; margin: 0;font-family: "Tilt Warp", sans-serif;}
+button{font-family: "Tilt Warp", sans-serif;outline: none; transition: all 400ms ease;}
 button:focus{outline: none;}
 input{outline: none; transition: all 400ms ease; outline: none;}
 input:focus{outline: none!important; box-shadow: unset!important;}
@@ -66,7 +67,7 @@ img{max-width: 100%;}
 .container:after{content: ""; display: table; clear: both;}
 #preloader {position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background: url(../images/loader.gif) center no-repeat #fff;}
 #preloader label{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin-top: 50px; font-size: 16px; color: #1d1d1d; letter-spacing: 1px;}
-.headding-part .headding-sub{font-size: 30px; color: #C10320; font-family: 'Pacifico', cursive; padding-bottom: 10px;}
+.headding-part .headding-sub{font-size: 30px; color: #C10320;  font-family: "Tilt Warp", sans-serif;padding-bottom: 10px;}
 .headding-part .headding-title {font-size: 70px; color: #1d1d1d; line-height: 58px; letter-spacing: 2px;font-weight: 700;}
 .btn i.fa ~ span {margin-left: 5px;}
 hr {margin-bottom: 0px; margin-top: 0px; border-top: 1px solid #e5e5e5; border-bottom: none; border-left: none; border-right: none; opacity: 1;}
@@ -160,7 +161,12 @@ table.border {border-color: #e5e5e5 !important;}
 // HEADER  //----------------------------
 _______________________________________________________*/
 header#header {position: fixed; top: 0; width: 100%; z-index: 999; padding: 15px 0; background: transparent; transition: all 400ms ease;}
-header#header.sticky {background: #121619; box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1); padding: 0px 0;}
+header#header.sticky {
+  background: rgba(0, 0, 0, 0.2); /* Fond semi-transparent */
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
+  padding: 0px 0;
+  backdrop-filter: blur(10px); /* Applique un flou à l'arrière-plan derrière le header */
+}
 .header-shadow{box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);}
 .navbar-brand img{max-width: 100%; transition: all 400ms ease;}
 .navbar-header .navbar-brand {padding: 0; margin-right: 0; display: inline-block;}
@@ -1530,20 +1536,21 @@ span.footer-close {background: #C10320; padding: 2px 16px;}
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Centre les items */
-  margin: 0 -5px; /* Ajuste les marges pour coller les images */
+  margin: 0 auto; /* Ajustement pour centrer sans marges négatives */
 }
 
 .product-item {
-  position: relative;
-  width: calc(33.333% - 10px); /* 3 items par ligne avec un ajustement pour la marge */
-  margin: 5px; /* Petite marge entre les items */
+  position: relative; /* Ajoutez ceci pour créer un contexte de positionnement */
+  width: calc(33.333% - 10px);
+  margin: 5px;
+  /* Le reste de votre CSS pour product-item */
 }
 
 .product-item img {
   width: 100%;
-  height: 600px; /* Hauteur fixe pour grands écrans */
-  object-fit: cover; /* Assure que l'image couvre bien l'espace sans être déformée */
-  border-radius: 0; /* Les images collent aux bords */
+  height: 600px; /* ou ajustez selon vos besoins */
+  object-fit: cover;
+  /* Le reste de votre CSS pour les images */
 }
 
 .product-info {
@@ -1553,6 +1560,7 @@ span.footer-close {background: #C10320; padding: 2px 16px;}
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  /* Assurez-vous que le reste de votre CSS pour product-info est correct */
 }
 
 .btn-discover {
@@ -1567,17 +1575,23 @@ span.footer-close {background: #C10320; padding: 2px 16px;}
 
 @media (max-width: 768px) {
   .products-section {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .product-item {
-      width: 100%; /* Les items prennent toute la largeur sur mobile */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; /* Empêche le débordement des éléments internes */
+    margin-bottom: 10px;
   }
 
   .product-item img {
-      height: 500px; /* Augmente la hauteur des images sur mobile pour plus de visibilité */
+    height: 500px; /* Ajuste la hauteur des images sur mobile pour plus de visibilité */
   }
-}
+} /* Accolade fermante ajoutée */
+
 
 /*************/
 .banniere {
@@ -1588,49 +1602,89 @@ span.footer-close {background: #C10320; padding: 2px 16px;}
 
 .images-cote-a-cote {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* Change à column sur mobiles pour les images en succession */
   width: 100%;
 }
 
 .image-container {
-  flex: 1 1 50%; /* Permet aux images de prendre 50% de l'espace disponible */
+  flex: 1; /* Adaptatif pour les écrans de toutes tailles */
   position: relative;
+  margin-left: 0px; /* Ajoute un peu d'espace entre les images sur mobile */
 }
 
-.image-container img, .section-hero .image-hero {
-  width: 100%;
-  height: auto;
-  display: block;
+/* Ajuste la taille des images pour grands écrans et les rend carrées */
+@media (min-width: 768px) {
+  .images-cote-a-cote {
+      flex-direction: row; /* Images côte à côte */
+  }
+  .image-container {
+      width: calc(50% - 10px); /* 50% de l'espace disponible, ajustement pour la marge */
+      height: 0; /* Empêche l'espace initial */
+      padding-bottom: calc(50% - 10px); /* Hauteur égale à la largeur, moins la marge, pour rendre l'image carrée */
+      margin: 0px; /* Espace entre les images */
+  }
+  .image-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Garantit que les images couvrent l'espace sans déformation */
+  }
 }
 
+/* Styles pour les overlays */
 .overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: white; /* Assure la visibilité du texte */
 }
 
+/* Styles de la section-hero et main-text */
 .section-hero {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px; /* Espace après les images */
 }
 
 .section-hero .main-text {
-  text-align: center;
+  text-align: justify;
+  text-justify: inter-word; /* Améliore la justification pour les navigateurs qui le prennent en charge */
   padding: 20px;
+  width: 80%; /* Ajustez selon les besoins pour contrôler la "carrure" du texte */
+  margin: auto; /* Centre le bloc de texte dans son conteneur */
 }
 
+
+/* Ajustements pour mobiles pour rendre les images plus hautes */
+@media (max-width: 767px) {
+  .image-container {
+      width: 100%; /* Prend toute la largeur disponible */
+      height: 0;
+      margin-bottom: 15px;
+  }
+}
+
+/* Ajustements spécifiques pour les grands écrans */
 @media (min-width: 768px) {
-  .images-cote-a-cote {
-      justify-content: space-between;
+  .images-cote-a-cote .image-container:nth-child(1) {
+      margin-right: 5px; /* Marge à droite pour le premier élément */
   }
 
-  .image-container, .section-hero {
-      flex: 1 1 auto;
+  .images-cote-a-cote .image-container:nth-child(2) {
+      margin-left: 5px; /* Marge à gauche pour le deuxième élément */
   }
+}
 
-  .section-hero {
-      flex-direction: column;
-      align-items: center;
-  }
+/***/
+.logo-container {
+  display: inline-block; /* Ou block selon la mise en page */
+  background-color: white; /* Fond blanc */
+  border-radius: 10px; /* Bords arrondis */
+  padding: 5px; /* Espace autour de l'image */
 }
