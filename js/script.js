@@ -265,6 +265,12 @@ function contactUs(amount) {
 
 /////New header
 document.getElementById('toggleMenu').addEventListener('click', function() {
-    const menuNav = document.querySelector('.menuNavigation');
-    menuNav.classList.toggle('shown');
-});
+    this.classList.toggle('open');
+    const menuPage = document.getElementById('menuPage');
+    if (this.classList.contains('open')) {
+      menuPage.style.display = 'block';
+    } else {
+      menuPage.style.display = 'none';
+    }
+  });
+  
