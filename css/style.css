@@ -48,7 +48,7 @@ _______________________________________________________*/
 
 /* -------------// General Style //------------- */
 *{box-sizing: border-box;}
-body{margin: 0; font-size: 16px; font-weight: 400; color: #999;}
+body{margin: 0; font-size: 16px; font-weight: 400; color: #000000;}
 h1, h2, h3, h4, h5, h6{padding: 0px; margin: 0;font-family: "Julius Sans One", sans-serif;  }
 ul, li{padding: 0; margin: 0; list-style: none;}
 a{padding: 0; margin: 0; text-decoration: none; transition: all 400ms ease; color: #1d1d1d; cursor: pointer;}
@@ -1657,4 +1657,23 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   .sur-matelas-section li {
       padding: 8px;
   }
+}
+
+/***********/
+.just-white-surmatelas .customer-reviews {
+  background-color: #f0f0f0; /* Un fond légèrement différent pour distinguer la section */
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.just-white-surmatelas .customer-reviews h3 {
+  color: #11114E;
+  margin-bottom: 10px;
+}
+
+.just-white-surmatelas .customer-reviews p {
+  color: #333;
+  font-size: 16px;
 }
