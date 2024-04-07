@@ -1377,6 +1377,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   display: flex;
   flex-direction: column; /* Change à column sur mobiles pour les images en succession */
   width: 100%;
+  
 }
 
 .image-container {
@@ -1389,6 +1390,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 @media (min-width: 768px) {
   .images-cote-a-cote {
       flex-direction: row; /* Images côte à côte */
+      margin-top: 10px;
   }
   .image-container {
       width: calc(50% - 10px); /* 50% de l'espace disponible, ajustement pour la marge */
@@ -1681,7 +1683,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 
 /*****************/
 .hero-section {
-  background: url('images/white-pillow-bed.jpg') no-repeat center center/cover;
+  background: url('https://raw.githubusercontent.com/themadoxx/atelier-justwhite/main/images/white-pillow-bed.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
