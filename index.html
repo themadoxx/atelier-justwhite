@@ -38,118 +38,28 @@
 	End preloader -->
 
 	
-	<header id="header">
-		<div class="container">
-			<div class="row m-0 align-items-center">
-				<div class="col-xl-3 col-lg-2 col-md-4 col-3 p-0">
-		            <div class="navbar-header">
-		               	<a class="navbar-brand page-scroll" href="index.html">
-		                	<img alt="pizzon" src="images/header-logo.svg">
-		                </a> 
-		            </div>
-			    </div>
-			    <div class="col-xl-9 col-lg-10 col-md-8 col-9 p-0 text-end">
-			        <div id="menu" class="navbar-collapse collapse" >
-			            <ul class="nav navbar-nav">
-				            <li class="level">
-				                <a href="index.html" class="page-scroll">Accueil</a>
-				            </li>
-							<li class="level set">
-				                <a class="page-scroll">Couettes</a>
-				                <span class="opener plus"></span> 
-				                <div class="megamenu mobile-sub-menu content">
-				                    <div class="megamenu-inner-top">
-				                       	<ul class="sub-menu-level1">
-				                         	<li class="level2">
-				                            	<ul class="sub-menu-level2 ">
-				                             		<li class="level3"><a href="carte-avantage.html"><span>■</span>Couettes Chaudes</a></li>
-				                              		<li class="level3"><a href="blog-leftside.html"><span>■</span>Couettes Jumelables</a></li>
-				                              		<li class="level3"><a href="carte-avantage.html"><span>■</span>Couettes Légères</a></li>
-				                              		<li class="level3"><a href="blog-leftside.html"><span>■</span>Couettes Tempérées</a></li>
-				                              		
-				                            	</ul>
-				                          	</li>
-				                        </ul>
-				                    </div>
-				                </div>
-				            </li>
-						
-					
-				          
-				            <li class="level set">
-				                <a class="page-scroll">Oreillers</a>
-				                <span class="opener plus"></span> 
-				                <div class="megamenu mobile-sub-menu content">
-				                    <div class="megamenu-inner-top">
-				                       	<ul class="sub-menu-level1">
-				                         	<li class="level2">
-				                            	<ul class="sub-menu-level2 ">
-				                             		<li class="level3"><a href="carte-avantage.html"><span>■</span>Oreillers Fermes</a></li>
-				                              		<li class="level3"><a href="blog-leftside.html"><span>■</span>Oreillers Ergonomiques</a></li>
-				                              		<li class="level3"><a href="carte-avantage.html"><span>■</span>Oreillers Moelleux</a></li>
-				                              		<li class="level3"><a href="blog-leftside.html"><span>■</span>Oreillers Souples</a></li>
-				                              		<li class="level3"><a href="blog-leftside.html"><span>■</span>Oreillers Ultra-Moelleux</a></li>
-				                              		
-				                            	</ul>
-				                          	</li>
-				                        </ul>
-				                    </div>
-				                </div>
-				            </li>
-
-							<li class="level set">
-				                <a class="page-scroll">Sur-Matelas</a>
-				                <span class="opener plus"></span> 
-				                <div class="megamenu mobile-sub-menu content">
-				                    <div class="megamenu-inner-top">
-				                       	<ul class="sub-menu-level1">
-				                         	<li class="level2">
-				                            	<ul class="sub-menu-level2 ">
-				                             		<li class="level3"><a href="carte-avantage.html"><span>■</span>Sur-Matelas Ferme</a></li>
-				                              		<li class="level3"><a href="blog-leftside.html"><span>■</span>Sur-Matelas Moelleux</a></li>
-				                              		<li class="level3"><a href="blog-leftside.html"><span>■</span>Sur-Matelas Medium</a></li>
-				                            	</ul>
-				                          	</li>
-				                        </ul>
-				                    </div>
-				                </div>
-				            </li>
-
-							<li class="level set">
-				                <a  class="page-scroll">Déco & Accessoires</a>
-				                <span class="opener plus"></span> 
-				                <div class="megamenu mobile-sub-menu content">
-				                    <div class="megamenu-inner-top">
-				                       	<ul class="sub-menu-level1">
-				                         	<li class="level2">
-				                            	<ul class="sub-menu-level2 ">
-				                             		<li class="level3"><a href="carte-avantage.html"><span>■</span>Coussins décoratifs</a></li>
-				                              		<li class="level3"><a href="blog-leftside.html"><span>■</span>Coussins de Sol</a></li>
-				                              		<li class="level3"><a href="blog-leftside.html"><span>■</span>Plaids</a></li>
-				                            	</ul>
-				                          	</li>
-				                        </ul>
-				                    </div>
-				                </div>
-				            </li>
-						
-						
-				          
-			            </ul>
-			        </div>
-			        <div class=" header-right-link">
-			            <ul>
-			                <li class="side-toggle">
-			                  	<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"><span></span></button>
-			                </li>
-			            </ul>
-			        </div>
-			    </div>
+	<header id="newFixedHeader">
+		<div class="headerContent">
+			<button id="toggleMenu">&#9776;</button>
+			<div class="headerLogo">
+				<a href="index.html">
+					<img src="images/header-logo.svg" alt="Logo" />
+				</a>
 			</div>
 		</div>
 	</header>
-
-
+	<div id="menuPage" class="menuPage">
+		<nav class="menuNavigation">
+			<ul>
+				<li><a href="#accueil">Accueil</a></li>
+				<li><a href="#couettes">Couettes</a></li>
+				<li><a href="#oreillers">Oreillers</a></li>
+				<li><a href="#surMatelas">Sur-Matelas</a></li>
+				<li><a href="#deco">Déco & Accessoires</a></li>
+			</ul>
+		</nav>
+	</div>
+	
 
 	<section class="hero-section">
 		<div class="hero-content">

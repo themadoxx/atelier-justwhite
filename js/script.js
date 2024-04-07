@@ -253,60 +253,7 @@ $(function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const formElements = document.querySelectorAll('#activity, #day, #age');
-    const timeInput = document.getElementById('time');
 
-    // Utiliser l'événement 'input' pour une meilleure compatibilité sur mobile
-    formElements.forEach(function(element) {
-        element.addEventListener('input', calculatePrice);
-    });
-    timeInput.addEventListener('input', calculatePrice);
-
-    function calculatePrice() {
-        const activity = document.getElementById('activity').value;
-        const day = document.getElementById('day').value;
-        const timeValue = document.getElementById('time').value;
-        const age = document.getElementById('age').value;
-        
-        // Gérer correctement le format de l'heure sur différents navigateurs et plateformes
-        const hour = timeValue ? parseInt(timeValue.substring(0, 2), 10) : null;
-
-        let price = 0;
-        let eveningStart = 19; // 19:00 en format 24h
-        let specialEveningStartFriday = 14; // 14:00 le vendredi
-
-        if (activity === 'bowling') {
-            if (age === 'child') {
-                price = "6.00 CHF";
-            } else {
-                if ((day === 'weekend' && hour >= 14) || (day === 'friday' && hour >= specialEveningStartFriday) || (hour >= eveningStart)) {
-                    price = "9.00 CHF";
-                } else {
-                    price = "7.00 CHF";
-                }
-            }
-            price += " + 2.00 CHF (Location des chaussures)";
-        } else if (activity === 'billard') {
-            if ((day === 'weekend' && hour >= 14) || (day === 'friday' && hour >= specialEveningStartFriday) || (hour >= eveningStart)) {
-                price = "20.00 CHF";
-            } else {
-                price = "17.00 CHF";
-            }
-            price += " par heure";
-        }
-
-        // S'assurer qu'un prix est affiché même si l'heure n'est pas sélectionnée
-        if (hour === null) {
-            document.getElementById('priceDisplay').textContent = "Veuillez sélectionner une heure.";
-        } else {
-            document.getElementById('priceDisplay').textContent = `Tarif : ${price}`;
-        }
-    }
-
-    // Exécuter au chargement pour afficher le prix initial
-    calculatePrice();
-});
   
 
 function contactUs(amount) {
@@ -316,3 +263,9 @@ function contactUs(amount) {
 }
 
 
+/////New header
+document.getElementById('toggleMenu').addEventListener('click', function() {
+    var menuPage = document.getElementById('menuPage');
+    var isMenuVisible = menuPage.style.display === 'block';
+    menuPage.style.display = isMenuVisible ? 'none' : 'block';
+});

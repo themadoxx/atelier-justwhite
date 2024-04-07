@@ -1747,3 +1747,59 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   40% {transform: translateY(-20px);}
   60% {transform: translateY(-10px);}
 }
+
+/*************************/
+#newFixedHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  z-index: 1050; /* Assurez-vous que le z-index est suffisamment élevé pour rester au-dessus du menuPage */
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#toggleMenu {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.headerLogo img {
+  height: 50px; /* Ajustez selon votre logo */
+}
+
+.menuPage {
+  display: none;
+  position: fixed;
+  top: 60px; /* Hauteur de votre header */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 60px); /* Prend en compte la hauteur du header */
+  background-color: #fff;
+  overflow-y: auto;
+  z-index: 1040;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.menuNavigation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menuNavigation ul li a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
