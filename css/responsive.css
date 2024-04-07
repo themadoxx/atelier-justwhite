@@ -234,8 +234,8 @@
 	// Home Page //----------------------------
 	________________________________________________________*/
 	.menu-width {max-width: 0 !important; padding: 0;}
-	#menu { background: #0E3B63; border-bottom: 0 none; bottom: 0; box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); display: inline-block !important; height: 100% !important; left: -100%; margin: 0 !important; position: fixed !important; top: 74px !important; width: 100%; z-index: 2; transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s; overflow-y: auto !important; overflow-x: hidden !important; padding-right: 0;}
-	#menu.show, #menu.menu-open {left: 0;}
+	#menu { background: #0E3B63; border-bottom: 0 none; bottom: 0; box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); display: inline-block !important; height: 100% !important; right: -100%; margin: 0 !important; position: fixed !important; top: 74px !important; width: 100%; z-index: 2; transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -webkit-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s; overflow-y: auto !important; overflow-x: hidden !important; padding-right: 0;}
+	#menu.show, #menu.menu-open {right: 0;}
 	.navbar-collapse {padding: 0px 15px 0 0;}
 	.navbar-collapse > ul {margin: 0 auto; width: 100%; display: block; max-width: 690px;padding-top: 20px;padding-bottom: 90px;}
 	.navbar-nav > li {display: inline-block; float: none; width: 100%;}
