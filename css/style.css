@@ -1755,51 +1755,118 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   width: 100%;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,.2);
-  z-index: 1050; /* Assurez-vous que le z-index est suffisamment élevé pour rester au-dessus du menuPage */
+  z-index: 1050;
 }
 
 .headerContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  width: 100%;
+}
+
+#toggleMenu, .menuNavigation {
+  position: absolute;
 }
 
 #toggleMenu {
+  left: 20px;
   background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
+  display: none; /* Initialement caché sur les grands écrans */
 }
 
-.headerLogo img {
-  height: 50px; /* Ajustez selon votre logo */
-}
-
-.menuPage {
-  display: none;
-  position: fixed;
-  top: 60px; /* Hauteur de votre header */
-  left: 0;
+.newHeaderLogo {
+  text-align: center;
   width: 100%;
-  height: calc(100vh - 60px); /* Prend en compte la hauteur du header */
-  background-color: #fff;
-  overflow-y: auto;
-  z-index: 1040;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  position: absolute;
+  top: 10px; /* Ajuster selon la hauteur de votre header */
+}
+
+.newHeaderLogo img {
+  max-width: 120px;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.menuNavigation {
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  overflow: visible;
+  box-shadow: none;
 }
 
 .menuNavigation ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .menuNavigation ul li a {
   display: block;
-  padding: 10px;
+  padding: 10px 15px;
   color: #000;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+/* Gérer la réactivité */
+@media (max-width: 768px) {
+  #toggleMenu {
+    display: block; /* Montrer le menu burger sur les petits écrans */
+  }
+
+  .newHeaderLogo img {
+    max-width: 90px; /* Taille réduite du logo sur mobiles */
+  }
+
+  .menuNavigation {
+    display: none; /* Cacher la navigation sur les petits écrans */
+  }
+
+  .menuNavigation.shown {
+    display: flex; /* Afficher le menu quand il est actif */
+    flex-direction: column;
+    position: fixed;
+    top: 60px; /* Hauteur de votre header */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    z-index: 1051;
+  }
+
+  .menuNavigation ul {
+    flex-direction: column;
+  }
+
+  .menuNavigation ul li a {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .headerContent {
+    justify-content: center;
+  }
+
+  #toggleMenu, .menuPage {
+    display: none; /* Assurer que la page de menu n'apparaît pas et que le toggleMenu est caché sur les grands écrans */
+  }
+
+  .newHeaderLogo {
+    position: static; /* Réinitialise le positionnement pour permettre le centrage */
+  }
 }
 

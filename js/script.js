@@ -265,7 +265,6 @@ function contactUs(amount) {
 
 /////New header
 document.getElementById('toggleMenu').addEventListener('click', function() {
-    var menuPage = document.getElementById('menuPage');
-    var isMenuVisible = menuPage.style.display === 'block';
-    menuPage.style.display = isMenuVisible ? 'none' : 'block';
+    const menuNav = document.querySelector('.menuNavigation');
+    menuNav.classList.toggle('shown');
 });
