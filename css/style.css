@@ -1821,7 +1821,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   .menuNavigation {
     display: none; /* Caché par défaut sur les écrans mobiles */
     position: absolute; /* Reste relative au header */
-    top: 40px; /* Démarre juste en dessous du header; ajustez selon la hauteur de votre header */
+    top: 37px; /* Démarre juste en dessous du header; ajustez selon la hauteur de votre header */
     left: 0;
     width: 100%; /* S'étend sur toute la largeur */
     height: calc(100vh - 50px); /* S'étend pour prendre toute la hauteur disponible sous le header */
@@ -1838,6 +1838,17 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   .menuNavigation.shown {
       display: flex; /* Show menu when toggled */
       
+  }
+}
+@media (max-width: 768px) {
+  .menuNavigation ul li a {
+      display: block; /* S'assure que chaque lien est affiché sur sa propre ligne */
+      padding: 15px; /* Augmente le padding pour plus d'espace autour du texte */
+      margin: 5px 0; /* Ajoute une marge verticale pour espacer les liens */
+      font-size: 20px; /* Augmente la taille de police pour une meilleure lisibilité */
+      color: #000; /* Couleur du texte */
+      text-decoration: none; /* Enlève le soulignement des liens */
+      border-bottom: 1px solid #eaeaea; /* Optionnel : ajoute un séparateur subtil entre les liens */
   }
 }
 
