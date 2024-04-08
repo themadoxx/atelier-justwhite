@@ -409,9 +409,9 @@ _______________________________________________________*/
 .chef{background-color: #121619; position: relative; overflow: hidden;}
 .chef:before{content: ""; background-image: url(../images/chef-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; opacity: .20; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 .chef .headding-part h2{color: #fff;}
-.chef-box{background: #fff; padding-bottom: 20px;border-radius: 20px;}
-.chef-box .chef-img{width: 100%; max-height: 263px;border-radius: 20px;}
-.chef-box .chef-name {font-size: 20px; color: #1d1d1d; padding-top: 25px; line-height: 20px; transition: all 400ms ease;}
+.chef-box{background: transparent; padding-bottom: 20px;border-radius: 5px;}
+.chef-box .chef-img{width: 100%; max-height: 263px;border-radius: 500px;}
+.chef-box .chef-name {font-size: 20px; color: #fff; padding-top: 25px; line-height: 20px; transition: all 400ms ease;}
 .chef-box:hover .chef-name {color: #11114E;}
 .chef-box .chef-ct{font-size: 14px; color: #999999; transition: all 400ms ease;}
 .chef-box:hover .chef-ct{color: #11114E;}
@@ -420,7 +420,7 @@ _______________________________________________________*/
 .chef-bottom-bg{position: absolute; bottom: -381px; left: 0; width: 100%;}
 .chef-bottom-bg img{width: 100%}
 .chef-outer {padding: 0px 15px;}
-.chef .chef-hover {position: relative; overflow: hidden;}
+.chef .chef-hover {position: relative; overflow: hidden;border-radius: 500px;}
 .chef .chef-hover::before {position: absolute; top: 0; left: -75%; z-index: 2; display: block; content: ''; width: 50%; height: 100%; background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%); background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%); -webkit-transform: skewX(-25deg); transform: skewX(-25deg);}
 .chef .chef-box:hover .chef-hover::before {-webkit-animation: shine .75s; animation: shine .75s;}
 .chef .owl-nav button {position: absolute; z-index: 2; color: #fff !important; font-size: 0px !important; top: 50%; transform: translateY(-50%); opacity: 0.5; line-height: 60px !important; overflow: hidden;}
@@ -526,7 +526,7 @@ button.news-more {border: unset; background: transparent;}
 /* -------------// Blog Page //------------- */
 .blog-box {padding-bottom: 35px;}
 .blog-img{margin-bottom: 24px; overflow: hidden;}
-.blog-img img{width: 100%; object-fit: cover; transition: all 400ms ease;}
+.blog-img img{width: 100%; object-fit: cover; transition: all 400ms ease;border-radius: 10px;}
 .blog-img img:hover {transform: scale(1.1);}
 .blog-box ul{padding-bottom: 5px;}
 .blog-box ul li{display: inline-block; font-size: 16px; color: #1d1d1d; padding: 0px 10px;}
@@ -559,7 +559,7 @@ button.news-more {border: unset; background: transparent;}
 .recent-inner {padding-top: 30px;}
 .recent-box { display: flex; width: 100%; margin-bottom: 25px; align-items: center;}
 .recent-img {width: 80px; float: left; overflow: hidden;}
-.recent-img img {width: 100%; object-fit: cover; transition: all 400ms ease;}
+.recent-img img {width: 100%; object-fit: cover; transition: all 400ms ease;border-radius: 500px;}
 .recent-img img:hover{transform: scale(1.1);}
 .recent-text {width: calc(100% - 80px); float: left; padding-left: 10px;}
 .recent-sub {font-size: 14px; color: #11114E; text-transform: uppercase; letter-spacing: 1px; padding-bottom: 4px; display: block;}
