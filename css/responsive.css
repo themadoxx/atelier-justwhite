@@ -610,7 +610,7 @@
 	.blog-box {padding-bottom: 25px;}
 	.blog-pagination ul li a{width: 35px; height: 35px; line-height: 35px;}
 	.blog-pagination ul li {padding: 0px 2px;}
-	.blog-box h2{line-height: 25px;}
+	.blog-box h2{font-size: 25px;}
 	.recent-img img {width: 100%;}
 	.order-r-2{order: 2;}
 	.order-r-1{order: 1;}
