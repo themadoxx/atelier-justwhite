@@ -265,7 +265,16 @@ function contactUs(amount) {
 
 /////New header
 document.getElementById('toggleMenu').addEventListener('click', function() {
-    const menuNavigation = document.querySelector('.menuNavigation');
+    const menuNav = document.querySelector('.menuNavigation');
     this.classList.toggle('open');
-    menuNavigation.classList.toggle('shown');
+    menuNav.classList.toggle('shown');
+
+    if (menuNav.classList.contains('shown')) {
+        menuNav.style.height = '0';
+        setTimeout(() => {
+            menuNav.style.height = 'calc(100vh - 50px)';
+        }, 10); // Démarre l'animation juste après avoir modifié le style
+    } else {
+        menuNav.style.height = '0';
+    }
 });
