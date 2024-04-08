@@ -149,7 +149,7 @@
 	/*_______________________________________________________
 	// Menu Page  //----------------------------
 	________________________________________________________*/
-	.page-banner {padding-top: 125px; padding-bottom: 80px;}
+	.page-banner {padding-top: 200px; padding-bottom: 80px;}
 
 	/*_______________________________________________________
 	// Shop categories Page  //----------------------------
@@ -361,7 +361,7 @@
 	________________________________________________________*/
 	.page-headding {font-size: 42px;}
 	.page-name{padding-top: 0;}
-	.page-banner {padding-top: 115px; padding-bottom: 70px;}
+	.page-banner {padding-top: 180px; padding-bottom: 70px;}
 	.menu-detail {padding: 10px 5px;}
 	.menu-tabbing {padding-bottom: 30px;}
 	.iteam-desc {padding-top: 4px; padding-bottom: 10px;}
@@ -588,7 +588,7 @@
 	// Menu Page  //----------------------------
 	________________________________________________________*/
 	.page-headding {font-size: 30px;}
-	.page-banner {padding-top: 85px; padding-bottom: 45px;}
+	.page-banner {padding-top: 120px; padding-bottom: 45px;}
 	.menu-tabbing ul {background: transparent; border: 0;}
 	.menu-tabbing .nav-tabs li a{padding: 8px 25px;}
 	.menu-list-box-2 {margin-bottom: 20px;}
