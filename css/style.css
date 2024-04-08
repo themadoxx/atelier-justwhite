@@ -1804,3 +1804,38 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
       justify-content: flex-end;
   }
 }
+
+/*****/
+.philosophy-section {
+  padding: 40px 0;
+  background-color: #f4f4f4; /* Arrière-plan léger pour la section */
+  text-align: center; /* Centrer le contenu */
+}
+
+.philosophy-item {
+  margin-bottom: 30px;
+}
+
+.philosophy-icon {
+  width: 60px; /* Taille de l'icône */
+  height: auto;
+  margin-bottom: 20px; /* Espacement entre l'icône et le titre */
+}
+
+.philosophy-item h3 {
+  font-size: 20px;
+  color: #333; /* Couleur du titre */
+  margin-bottom: 15px;
+}
+
+.philosophy-item p {
+  font-size: 16px;
+  color: #666; /* Couleur du texte */
+  padding: 0 10px; /* Padding pour le texte sur petits écrans */
+}
+
+@media (min-width: 768px) {
+  .philosophy-item p {
+    padding: 0 20px; /* Padding ajusté pour les écrans plus larges */
+  }
+}
