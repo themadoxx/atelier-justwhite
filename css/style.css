@@ -1873,6 +1873,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   padding: 40px 0;
   background-color: #f4f4f4; /* Arrière-plan léger pour la section */
   text-align: center; /* Centrer le contenu */
+  margin-top: -10px;
 }
 
 .philosophy-item {
