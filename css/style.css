@@ -915,9 +915,10 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 /*bienvenue à conthey*/
 .welcome-section {
   text-align: center;
-  padding: 20px;
+  padding: 0px 20px;
   border-radius: 8px; /* Bords arrondis pour un look moderne */
-  margin: 20px 0; /* Espace autour de la section */
+  margin: 0px 0; /* Espace autour de la section */
+  margin-bottom:15px;
 }
 
 .welcome-title {
@@ -1441,6 +1442,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
       width: 100%; /* Prend toute la largeur disponible */
       height: 0;
       margin-bottom: 15px;
+      margin-top:20px;
   }
 }
 
@@ -1464,129 +1466,6 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 }
 
 
-/*********************/
-/* Importation de la police de caractère */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
-:root {
-  --c1: #faf9f6;
-  --c2: #71684e;
-  /* Approximation des fonctions darken et lighten */
-  --box-shadow-color: rgba(0, 0, 0, 0.1); /* Remplacer par le résultat de darken(@c1,10%) */
-  --input-background-color: #eae9e6; /* Remplacer par le résultat de @c1 */
-  --input-box-shadow-color: rgba(113, 104, 78, 0.15); /* Remplacer par le résultat de fade(@c2,15%) */
-  --input-placeholder-color: rgba(113, 104, 78, 0.5); /* Remplacer par le résultat de fade(@c2,50%) */
-  --input-color: #565248; /* Couleur plus foncée, approximation de darken(mix(lime,green),10%) */
-  --submit-bg-color: #009688; /* Choix de couleur, remplacez selon votre besoin */
-}
-
-
-#lead-capture {
-  font-family: 'Open Sans', sans-serif; /* Police par défaut pour toute la section */
-}
-
-#lead-capture h2, #lead-capture h3 {
-  font-family: 'Roboto', sans-serif; /* Police spécifique pour les titres h2 et h3 */
-}
-
-#lead-capture {
-  background: var(--c1);
-  box-shadow: 0 10px 30px var(--box-shadow-color);
-  display: flex;
-  flex-direction: row-reverse;
-  border-radius: 24px;
-  overflow: hidden;
-  padding: 12px;
-  width: calc(100vw - 35px);
-  margin: 48px auto;
-  gap: 36px;
-}
-
-.visuals {
-  background: url('https://images.unsplash.com/photo-1616422403639-282145aa3e73?crop=edges&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDcyNjkyOTV8&ixlib=rb-4.0.3&q=80&w=480');
-  background-size: cover;
-  border-radius: 12px;
-  width: 40%;
-}
-
-.readables {
-  width: 60%;
-  padding: 0 0 24px 24px;
-}
-
-.readables li {
-  list-style: inside '✔   ';
-  line-height: 1.75;
-  letter-spacing: 0.25px;
-}
-
-.readables form {
-  display: flex;
-  gap: 12px; /* Pour l'espacement entre l'input et le bouton */
-}
-
-.readables input[type="email"],
-.readables input[type="submit"] {
-  border-radius: 12px;
-  border: none;
-  padding: 0 18px;
-  line-height: 44px;
-  width: 100%;
-  color: var(--input-color);
-  background: var(--input-background-color);
-  box-shadow: inset 2px 0 15px var(--input-box-shadow-color);
-  transition: 400ms ease all 0s;
-}
-
-.readables input[type="email"]::placeholder,
-.readables input[type="submit"]::placeholder {
-  color: var(--input-placeholder-color);
-  transition: 400ms ease all 500ms;
-}
-
-.readables input[type="email"]:focus {
-  outline: transparent;
-  box-shadow: inset 0 0 1px 1px rgba(113, 104, 78, 0.5), inset 2px 0 15px rgba(0, 128, 0, 0.33);
-}
-
-.readables input[type="submit"] {
-  cursor: pointer;
-  transition: 400ms ease all;
-  opacity: 0;
-  width: 0;
-  padding: 0;
-}
-
-.readables input[type="email"]:valid ~ input[type="submit"] {
-  opacity: 1;
-  width: auto; /* Ajuster selon la largeur désirée */
-  padding: 0 18px;
-}
-
-.check-benefits {
-  margin: 10px;
-  padding: 10px;
-
-}
-
-.lock-icon{
-  margin: 10px;
-}
-
-@media screen and (max-width: 800px) {
-  #lead-capture {
-    flex-direction: column;
-  }
-
-  .visuals {
-    width: 100%;
-  }
-
-  .readables {
-    width: 100%;
-    padding: 0;
-  }
-}
 
 
 
@@ -1772,6 +1651,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   align-items: center;
   width: 100%;
   padding: 10px 20px;
+  margin:0px 90px;
 }
 
 .newHeaderLogo {
@@ -1784,7 +1664,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 
 .newHeaderLogo img {
   height: auto;
-  max-width: 100px;
+  max-width: 270px;
 }
 #toggleMenu {
   display: block; /* Assurez-vous que le menu burger est toujours visible sur les petits écrans */
@@ -1816,41 +1696,87 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 @media (max-width: 768px) {
   .toggleMenu {
       display: block; /* Show toggle button on small screens */
+      background-color:transparent;
+      border: none;
+
   }
 
+  .headerContent {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Garde les éléments aux extrémités sur grands écrans */
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+    margin:0px 25px;
+  }
+  
+
   .menuNavigation {
-    display: none; /* Caché par défaut sur les écrans mobiles */
-    position: absolute; /* Reste relative au header */
-    top: 37px; /* Démarre juste en dessous du header; ajustez selon la hauteur de votre header */
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px; /* Ajustez selon la hauteur de votre header */
     left: 0;
-    width: 100%; /* S'étend sur toute la largeur */
-    height: calc(100vh - 50px); /* S'étend pour prendre toute la hauteur disponible sous le header */
-    background-color: #fff; /* Fond blanc pour le menu */
+    width: 100%;
+    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
-    z-index: 1050; /* S'assure que le menu s'affiche au-dessus des autres contenus */
-    overflow-y: auto; /* Permet le défilement si le contenu dépasse la hauteur */
-}
+    overflow-y: auto;
+    height: calc(100vh - 60px); /* Assurez-vous que le menu prend toute la hauteur disponible */
+    visibility: hidden; /* Cache le menu initialement */
+    opacity: 0; /* Rend le menu totalement transparent */
+    transform: translateY(-20px); /* Démarre légèrement au-dessus de sa position pour créer un effet d'étirement */
+    transition: visibility 0s linear 0.5s, opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Applique des transitions fluides */
+  }
+  
+  .menuNavigation.shown {
+    visibility: visible; /* Rend le menu visible */
+    opacity: 1; /* Fait apparaître le menu */
+    transform: translateY(0); /* Positionne le menu à sa place normale */
+    transition-delay: 0s; /* Assure que la transition démarre immédiatement */
+  }
+  
+  
 
   .menuNavigation ul {
       flex-direction: column;
   }
-
-  .menuNavigation.shown {
-      display: flex; /* Show menu when toggled */
-      
+  .toggleMenu span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #11114E;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
   }
-}
-@media (max-width: 768px) {
+  
+  .toggleMenu.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .toggleMenu.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .toggleMenu.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
   .menuNavigation ul li a {
-      display: block; /* S'assure que chaque lien est affiché sur sa propre ligne */
-      padding: 15px; /* Augmente le padding pour plus d'espace autour du texte */
-      margin: 5px 0; /* Ajoute une marge verticale pour espacer les liens */
-      font-size: 20px; /* Augmente la taille de police pour une meilleure lisibilité */
-      color: #000; /* Couleur du texte */
-      text-decoration: none; /* Enlève le soulignement des liens */
-      border-bottom: 1px solid #eaeaea; /* Optionnel : ajoute un séparateur subtil entre les liens */
-  }
+    display: block; /* S'assure que chaque lien est affiché sur sa propre ligne */
+    padding: 15px 70px; /* Augmente le padding pour plus d'espace autour du texte */
+    margin: 5px 0; /* Ajoute une marge verticale pour espacer les liens */
+    font-size: 20px; /* Augmente la taille de police pour une meilleure lisibilité */
+    color: #000; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    border-bottom: 1px solid #eaeaea; /* Optionnel : ajoute un séparateur subtil entre les liens */
 }
+.newHeaderLogo img {
+  height: auto;
+  max-width: 190px;
+}
+}
+
 
 
 @media (min-width: 769px) {
