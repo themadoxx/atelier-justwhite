@@ -1713,7 +1713,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   background-color: #fff;
   color: #111;
   padding: 10px 20px;
-  margin: 0 10px;
+  margin: 5px 10px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -1749,10 +1749,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 }
 
 /*************************/
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+
 
 #newFixedHeader {
   position: fixed;
@@ -1767,22 +1764,36 @@ body {
   align-items: center;
 }
 
+
 .headerContent {
-  width: 100%;
-  max-width: 1200px;
-  padding: 10px 20px;
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Garde les éléments aux extrémités sur grands écrans */
   align-items: center;
+  width: 100%;
+  padding: 10px 20px;
 }
 
-.toggleMenu {
-  display: none; /* Hidden by default, shown on small screens */
+.newHeaderLogo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .newHeaderLogo img {
-  max-width: 120px; /* Adjust as necessary */
+  height: auto;
+  max-width: 100px;
 }
+#toggleMenu {
+  display: block; /* Assurez-vous que le menu burger est toujours visible sur les petits écrans */
+  z-index: 2; /* Assure que le menu burger est au-dessus du logo pour les interactions */
+}
+
+
+
+
 
 .menuNavigation ul {
   list-style: none;
@@ -1808,15 +1819,17 @@ body {
   }
 
   .menuNavigation {
-      display: none; /* Hide menu by default on small screens */
-      position: absolute;
-      top: 60px; /* Adjust based on header height */
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,.2);
-      z-index: 1050;
-  }
+    display: none; /* Caché par défaut sur les écrans mobiles */
+    position: absolute; /* Reste relative au header */
+    top: 40px; /* Démarre juste en dessous du header; ajustez selon la hauteur de votre header */
+    left: 0;
+    width: 100%; /* S'étend sur toute la largeur */
+    height: calc(100vh - 50px); /* S'étend pour prendre toute la hauteur disponible sous le header */
+    background-color: #fff; /* Fond blanc pour le menu */
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    z-index: 1050; /* S'assure que le menu s'affiche au-dessus des autres contenus */
+    overflow-y: auto; /* Permet le défilement si le contenu dépasse la hauteur */
+}
 
   .menuNavigation ul {
       flex-direction: column;
@@ -1824,6 +1837,33 @@ body {
 
   .menuNavigation.shown {
       display: flex; /* Show menu when toggled */
-      flex-direction: column;
+      
+  }
+}
+
+
+@media (min-width: 769px) {
+  #toggleMenu {
+      display: none;
+  }
+  
+  .headerContent {
+      justify-content: flex-start; /* Alignez les éléments à gauche sur les grands écrans */
+  }
+  
+  .newHeaderLogo {
+      position: static; /* Réinitialisez la position du logo pour le comportement normal en flexbox */
+      transform: none; /* Annulez la transformation appliquée */
+      margin: 0 auto; /* Centrer le logo dans l'espace disponible s'il n'y a pas d'élément à droite */
+  }
+
+  .menuNavigation {
+      flex-grow: 1; /* Permet aux éléments de navigation de remplir l'espace et pousse le logo à gauche */
+      display: flex;
+      justify-content: flex-end; /* Alignez les liens de navigation à droite */
+  }
+  
+  .menuNavigation ul {
+      justify-content: flex-end;
   }
 }
