@@ -884,7 +884,7 @@ section.page-banner.page-not-found {background: #121619;}
 /*_______________________________________________________
 // FOOTER  //----------------------------
 _______________________________________________________*/
-footer{background: #11114E; padding-top: 100px;}
+footer{background: #000000; padding-top: 100px;}
 .footer {padding-bottom: 95px; border-bottom: 1px solid #202529;}
 .footer-logo .footer-des{font-size: 14px; color: #fff; max-width: 240px; padding-top: 35px; padding-bottom: 10px;}
 .footer-logo ul li{font-size: 14px; color: #fff; padding: 10px 0px; text-transform: uppercase;}
@@ -1805,7 +1805,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 
 .footer-heading {
   margin-bottom: 15px;
-  color: #086375; /* Couleur dorée pour une touche d'élégance */
+  color: #fff; /* Couleur dorée pour une touche d'élégance */
   font-size: 20px;
 }
 
@@ -1838,7 +1838,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 .useful-links{
   margin: 0px;
   font-size: 25px;
-  text-align: center;
+  text-align: left;
 }
 
 /***/ 
