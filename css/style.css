@@ -423,7 +423,7 @@ _______________________________________________________*/
 .chef .chef-hover {position: relative; overflow: hidden;}
 .chef .chef-hover::before {position: absolute; top: 0; left: -75%; z-index: 2; display: block; content: ''; width: 50%; height: 100%; background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%); background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%); -webkit-transform: skewX(-25deg); transform: skewX(-25deg);}
 .chef .chef-box:hover .chef-hover::before {-webkit-animation: shine .75s; animation: shine .75s;}
-.chef .owl-nav button {position: absolute; z-index: 2; color: #11114E !important; font-size: 0px !important; top: 50%; transform: translateY(-50%); opacity: 0.5; line-height: 60px !important; overflow: hidden;}
+.chef .owl-nav button {position: absolute; z-index: 2; color: #fff !important; font-size: 0px !important; top: 50%; transform: translateY(-50%); opacity: 0.5; line-height: 60px !important; overflow: hidden;}
 .chef .owl-nav button span {position: relative; top: -11px;}
 .chef .owl-nav button:hover{opacity: 1;}
 .chef .owl-nav button.owl-prev {left: -30px;}
@@ -1342,7 +1342,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   color: white;
   padding: 10px 20px;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
 }
@@ -1425,7 +1425,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0px; /* Espace après les images */
+  margin-top: 20px; /* Espace après les images */
 }
 
 .section-hero .main-text {
@@ -1458,13 +1458,6 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 }
 
 /***/
-.logo-container {
-  display: inline-block; /* Ou block selon la mise en page */
-  background-color: white; /* Fond blanc */
-  border-radius: 10px; /* Bords arrondis */
-  padding: 5px; /* Espace autour de l'image */
-}
-
 
 
 
@@ -1851,4 +1844,26 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 /***/ 
 .oreiller-section{
   margin: 20px;
+}
+
+/******/
+.section-buttons .button {
+  display: inline-block;
+  background-color: #eee;
+  color: #111;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+}
+
+.section-buttons {
+  margin-top: 20px;
+}
+
+.section-buttons .button:hover {
+  background-color: #eee;
 }

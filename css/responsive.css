@@ -551,8 +551,8 @@
 	.menu-bottom-bg {bottom: -35px;}
 	.about-pizzon .online-des{padding-top: 15px;}
 	.chef .owl-dots{text-align: center; position: relative; top: 10px;}
-	.chef button.owl-dot{width: 10px; height: 10px; border: 2px solid #fd9d3e; border-radius: 100%; margin: 0px 5px; transition: all 400ms ease;}
-	.chef button.owl-dot.active{background: #fd9d3e;}
+	.chef button.owl-dot{width: 10px; height: 10px; border: 2px solid #fff; border-radius: 100%; margin: 0px 5px; transition: all 400ms ease;}
+	.chef button.owl-dot.active{background: #fff;}
 	.chef-box .chef-img{max-height: unset;}
 	.chef-box .chef-name{font-size: 18px; line-height: 16px; padding-top: 16px;}
 	.customer-top-bg {top: -27px;}
@@ -578,7 +578,7 @@
 	.footer-box{padding-top: 20px;}
 	.opening-hours ul li{padding: 3px 0px;}
 	.footer-logo ul li{padding: 3px 0px;}
-	.footer-logo img {max-width: 140px;}
+	.footer-logo img {max-width: 210px;}
 	footer {padding-top: 30px;}
 	.footer {padding-bottom: 40px;}
 	.max-w-390{max-width: 100%;}
