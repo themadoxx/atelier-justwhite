@@ -36,7 +36,7 @@
 		<label>Chargement</label>
 	</div>
 	End preloader -->
-	<header id="newFixedHeader">
+	<header id="newFixedHeader" class="hidden">
         <div class="headerContent">
             <button id="toggleMenu" aria-label="Toggle menu" class="toggleMenu">
                 <span></span>
@@ -50,10 +50,10 @@
             </div>
             <nav class="menuNavigation">
                 <ul>
-                    <li class="wow fadeInLeft"><a href="./couette.html">Couettes</a></li>
-                    <li class="wow fadeInLeft"><a href="./oreiller.html">Oreillers</a></li>
-                    <li class="wow fadeInLeft"><a href="./sur-matelas.html">Sur-Matelas</a></li>
-                    <li class="wow fadeInLeft"><a href="deco.html">Déco & Accessoires</a></li>
+                    <li><a href="couette.html">Couettes</a></li>
+                    <li><a href="oreiller.html">Oreillers</a></li>
+                    <li><a href="sur-matelas.html">Sur-Matelas</a></li>
+                    <li><a href="deco.html">Déco & Accessoires</a></li>
                 </ul>
             </nav>
         </div>
@@ -97,8 +97,37 @@
 		
 	</section>
 	
+	  
 
-
+	  <section class="features-section">
+		<div class="features-content">
+			<h2 class="features-title">Features</h2>
+			<p class="features-subtitle">Most calendars are designed for teams.<br/>Slate is designed for freelancers.</p>
+		</div>
+		<div class="features-items">
+			<div class="feature-item">
+				<div class="feature-icon"><img src="feature-icon-1.svg" alt="Feature 1"></div>
+				<h3 class="feature-item-title">OpenType features<br/>Variable fonts</h3>
+				<p class="feature-item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+			</div>
+			<div class="feature-item">
+				<div class="feature-icon"><img src="feature-icon-1.svg" alt="Feature 1"></div>
+				<h3 class="feature-item-title">OpenType features<br/>Variable fonts</h3>
+				<p class="feature-item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+			</div>
+			<div class="feature-item">
+				<div class="feature-icon"><img src="feature-icon-1.svg" alt="Feature 1"></div>
+				<h3 class="feature-item-title">OpenType features<br/>Variable fonts</h3>
+				<p class="feature-item-description">Slate helps you see how many more days you need to work to reach your financial goal.</p>
+			</div>
+			<!-- Répétez pour les autres éléments de fonctionnalité -->
+		</div>
+		<div class="video-container">
+			<img src="https://via.placeholder.com/1177x658" alt="Video Thumbnail" class="video-thumbnail">
+			<button class="play-video-button"></button>
+		</div>
+	</section>
+	
 
 	<div class="container">
 		<div class="row justify-content-center">
@@ -178,8 +207,28 @@
 	  </section>
 	  
 
-
 	
+	  <div class="partners-section">
+		<div class="partners-content">
+			<h2 class="partners-title">Partners</h2>
+			<p class="partners-description">Most calendars are designed for teams. Slate is designed for freelancers.</p>
+		</div>
+		<div class="partners-logos">
+			<div class="partner-logo-box">
+				<div class="partner-name">Client Name</div>
+				<div class="logo-placeholder logo-placeholder-1"></div>
+			</div>
+			<div class="partner-logo-box">
+				<div class="partner-name">Client Name</div>
+				<img src="https://via.placeholder.com/193x58" />
+			</div>
+			<!-- Ajoutez d'autres divs .partner-logo-box selon vos besoins -->
+		</div>
+		<div class="cta-button">
+			
+			<a href="#contact" class="button">Nous Contacter</a>
+		</div>
+	</div>
 	
 	<section class="about-pizzon relative ptb">
 		<div class="container">
@@ -244,7 +293,7 @@
 				</div>
 				<div class="chef-outer text-center">
 					<div class="chef-box">
-						<div class="chef-hover"><img src="images/sur.jpg" alt="chef" class="chef-img"></div>
+						<div class="chef-hover"><img src="images/sur-demande.jpg" alt="chef" class="chef-img"></div>
 						<p class="chef-name text-uppercase fw-bold">Sur demande</p>
 						<span class="chef-ct">Personnalisation disponible</span>
 					</div>
@@ -256,11 +305,57 @@
 
 
 
+	  <div class="newsletter-container">
+		<div class="image-placeholder"></div>
+		<div class="newsletter-content">
+			<h2 class="newsletter-heading">Newsletter</h2>
+			<p class="newsletter-title">Ensemble<br>pour la qualité.</p>
+			<p class="newsletter-subtitle">Ne ratez aucune nouveauté</p>
+			<p class="newsletter-description">Recevez exclusivement vos e-mails personnalisés</p>
+			<form action="https://gmail.us18.list-manage.com/subscribe/post?u=0f6096448b6f3031cee6abb7c&amp;id=167d23201a&amp;f_id=009cc2e1f0" method="post" id="mc-embedded-subscribe-form" class="newsletter-form" target="_self" novalidate>
+				<div class="email-btn-container">
+					<input type="email" name="EMAIL" class="newsletter-email-input required email" placeholder="Votre Email" required id="newsletter-email">
+					<button type="submit" class="newsletter-submit-btn" id="subscribe-button">S'abonner</button>
+				</div>
+				<div aria-hidden="true" style="position: absolute; left: -5000px;">
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+					<input type="text" name="b_0f6096448b6f3031cee6abb7c_167d23201a" tabindex="-1" value="">
+				</div>
+			</form>
+		</div>
+	</div>
 
+	<div class="contact-container">
+		<div class="contact-header">
+			<h1>Contact Us</h1>
+			<p>Most calendars are designed for teams. Slate is designed for freelancers.</p>
+		</div>
+		<div class="contact-content">
+			<div class="contact-info-map">
+				<div class="contact-info">
+					<p>6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
+					<p>(843) 555-0130</p>
+					<p>willie.jennings@example.com</p>
+				</div>
+				<div class="contact-map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.0691268734217!2d-7.5369979009418895!3d33.39536069903183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda63189270f86ed%3A0xf03b7114282bed32!2sPark%20Industriel%20SAPINO!5e0!3m2!1sfr!2sma!4v1712601574238!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<div class="contact-form">
+				<input type="text" placeholder="Your Name" />
+				<input type="email" placeholder="Your Email" />
+				<textarea placeholder="Your Message"></textarea>
+				<button>Send</button>
+			</div>
+		</div>
+	</div>
+	
+	
+	
 	<!--<div class="thin-separator"></div>-->
 
 
-	<div id="mc_embed_shell" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 0 auto; font-family: Arial, sans-serif;">
+	<!--<div id="mc_embed_shell" style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 0 auto; font-family: Arial, sans-serif;">
 
 		<div id="mc_embed_signup">
 			<form action="https://gmail.us18.list-manage.com/subscribe/post?u=0f6096448b6f3031cee6abb7c&amp;id=167d23201a&amp;f_id=009cc2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="" style="text-align: center;">
@@ -277,7 +372,7 @@
 						<div class="response" id="mce-success-response" style="display: none; color: green;"></div>
 					</div>
 					<div aria-hidden="true" style="position: absolute; left: -5000px;">
-						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+						<-- real people should not fill this in and expect good things - do not remove this or risk form bot signups ->
 						<input type="text" name="b_0f6096448b6f3031cee6abb7c_167d23201a" tabindex="-1" value="">
 					</div>
 					<div class="optionalParent">
@@ -288,16 +383,19 @@
 				</div>
 			</form>
 		</div>
-	</div>
-	
+	</div>-->
 
-	<section class="contact-map wow fadeInUp">
+
+	  
+
+
+	<!--<section class="contact-map wow fadeInUp">
 		<iframe class="map-pizzon" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.0691268734217!2d-7.5369979009418895!3d33.39536069903183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda63189270f86ed%3A0xf03b7114282bed32!2sPark%20Industriel%20SAPINO!5e0!3m2!1sfr!2sma!4v1712601574238!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	</section>
+	</section>-->
 
 
 	<div class="top-scrolling">
-		<a href="#top" class="scrollTo"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		<a href="#" class="scrollTo"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 	</div>
 
 	<footer>
@@ -414,6 +512,28 @@
 		  });
 		});
 		</script>
+		<script>
+			document.getElementById('newsletter-email').addEventListener('input', function(e) {
+				const subscribeButton = document.getElementById('subscribe-button');
+				if (e.target.value.includes('.')) {
+					subscribeButton.style.backgroundColor = '#11114E';
+				} else {
+					subscribeButton.style.backgroundColor = '#EEE';
+				}
+			});
+			</script>
+			<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const header = document.getElementById('newFixedHeader');
+				window.addEventListener('scroll', () => {
+					if (window.scrollY > 50) { // Commence à afficher après un certain défilement
+						header.classList.remove('hidden');
+					} else {
+						header.classList.add('hidden');
+					}
+				});
+			});
+			</script>
 		
 	<script src="js/jquery.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>

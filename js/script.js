@@ -269,3 +269,15 @@ document.getElementById('toggleMenu').addEventListener('click', function() {
     this.classList.toggle('open');
     menuNav.classList.toggle('shown');
 });
+
+
+document.getElementById('email').addEventListener('input', function() {
+    var button = document.querySelector('.contact-form button');
+    if(this.value.includes('.')) {
+      button.style.backgroundColor = '#11114E';
+    } else {
+      button.style.backgroundColor = '#eee';
+    }
+  });
+
+  
