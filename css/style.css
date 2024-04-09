@@ -2077,6 +2077,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      margin-top:30px;
   }
 }
 
@@ -2084,7 +2085,7 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 /***************/
 .newsletter-container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1600px;
   height: 725px;
   padding-top: 43px;
   padding-bottom: 43px;
@@ -2118,10 +2119,11 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 
 
 .image-placeholder {
-  background: url('https://via.placeholder.com/677x514') no-repeat center center;
+  background: url('../images/thumbnail_34.jpg') no-repeat center center;
   background-size: cover;
   width: 677px;
   height: 514px;
+  border-radius: 10px;
 }
 
 .newsletter-content {
@@ -2162,10 +2164,10 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 }
 
 .newsletter-submit-btn {
-  padding: 10px 38px;
+
   background-color: #11114E;
   color: white;
-  border-radius: 35px;
+ 
   border: none;
   cursor: pointer;
 }
@@ -2185,10 +2187,11 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 .contact-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 52px 20px;
+  padding: 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .contact-header h1, .contact-header p {
@@ -2233,10 +2236,10 @@ span.footer-close {background: #11114E; padding: 2px 16px;}
 }
 
 .contact-form button {
-  background-color: #2091F9;
-  color: white;
+  background-color: #eee;
+  color: black;
   cursor: pointer;
-}
+  width: 25%;
 
 @media (max-width: 768px) {
   .contact-content {
